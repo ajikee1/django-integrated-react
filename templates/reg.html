@@ -1,0 +1,21 @@
+{% load static %}
+
+<html>
+    <head>
+
+    </head>
+    <body>
+
+         <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>    
+       
+
+        <h1>This is a static html page</h1>
+       
+        <p> This pie chart is rendered using React</p>
+
+        <!-- Load our React component. -->
+        <div id="like_button_container"></div>
+        <script type="text/babel" data-presets="react" data-type="module" src={% static "bar_chart.js" %}></script>
+            
+    </body>
+</html>
