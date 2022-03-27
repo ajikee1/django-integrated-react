@@ -17,4 +17,4 @@ function Pie(){
     </div>);
 }
 
-ReactDOM.render(<Pie />,document.getElementById("like_button_container"));
+ReactDOM.render(<Pie />,document.getElementById("pie_chart_container"));
