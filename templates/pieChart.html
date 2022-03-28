@@ -2,30 +2,32 @@
 
 <html>
     <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.6.0/echarts-en.min.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>  
 
     </head>
     <body>
-
-         <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>    
-       
-
         <h1>This is a static html page</h1>
        
-        <p> This pie chart is rendered using React</p>
 
+        <p> Following are e-chart</p>
+        <!-- E-chart. -->
+        <div id="chart" style="width: 500px; height: 350px;"></div>
+        <script type="text/babel" data-type="module" src={% static "echart_sample.js" %}></script>
+
+        <div id="linegraph" style="width: 500px; height: 350px;"></div>
+        <script type="text/babel" data-type="module" src={% static "line_graph.js" %}></script>
+
+
+        <p> Following are react components</p>
         <!-- Load our React component. -->
-        <div id="pivot_container"></div>
+        <div id="pivot_container" style="width: 500px; height: 350px;"></div>
         <script type="text/babel" data-presets="react" data-type="module" src={% static "org_chart.js" %}></script>
 
 
-        <div id="pie_chart_container"></div>
+        <div id="pie_chart_container" style="width: 500px; height: 350px;"></div>
         <script type="text/babel" data-presets="react" data-type="module" src={% static "pie_chart.js" %}></script>
-        
-        
-        
-
-
-
+    
 
             
     </body>
