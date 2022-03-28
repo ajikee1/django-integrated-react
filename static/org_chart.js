@@ -22,9 +22,9 @@ const data = [
         "Mike",
         "VP",
     ],
-    ["Alice", "Mike", ""],
+    ["Ajith", "Mike", ""],
     ["Bob", "Jim", "Bob Sponge"],
-    ["Carol", "Bob", ""],
+    ["Karyna", "Bob", ""],
 ];
 
 const options = {
